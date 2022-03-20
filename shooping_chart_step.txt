@@ -1,0 +1,18 @@
+1. buat class atau function javascript untuk menampung data dari list item ke dalam cookies
+
+2. ketika click buy, kirim nama item dan gambarnya ke dalam class dan function tersebut
+
+3. simpan dahulu data item tersebut ke dalam variable yang mempunyai type data array, 
+   lalu simpan data tersebut ke dalam cookies
+
+4. output dari class atau function tersebut berupa list item yang sudah di simpan ke dalam cookies
+
+5. lalu hitung jumlah item tersebut untuk di masukan ke dalam total shoping chart
+
+
+untuk point 3 simapan ke dalam bentuk json string dengan menggunakan. contoh penggunanan jsonnya 
+JSON.stringify(this.myAry)
+
+untuk point 4, setelah mengambil cookiesnya, rubah json string tersebut ke dalam bentauk semula 
+yaitu array dengan cara : JSON.parse(dataCookie)
+

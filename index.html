@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ecommerce</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .header {
+            padding: 5px 15px 5px 15px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 20px;
+            height: 50px;
+            position: static;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .flex-container {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .flex-item {
+            width: 30%;
+
+            margin: 15px 0;
+        }
+
+        .footerholder {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+
+        .flex-container img {
+            width: 190px;
+        }
+
+        .flex-container p {
+            font-size: 12.5px;
+        }
+
+        .container {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="home-logo left">
+                HOME
+            </div>
+            <div class="cart right">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" src="img/cart.png" alt=""
+                    width="30px">
+                (0)
+            </div>
+
+            <!-- Cart Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="img/iphone-xs.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Iphone XS</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(0)">
+                    Buy
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="img/asus-rog-phone-3.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Asus ROG Phone 3</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(1)">
+                    Buy
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="img/oneplus-8pro.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Oneplus 8 PRO</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(2)">
+                    Buy
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="img/oppo-find-x3-pro.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Oppo Find X3 PRO</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(3)">
+                    Buy
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="img/samsung-z-flip3.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Samsung Z FLIP3</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(4)">
+                    Buy
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="img/xiaomi-poco-xs-gt.png" class="imgBrg" alt="">
+                <h6 class="nama-barang">Xiaomi Poco XS GT</h6>
+                <p>64 GB ROM | 14.73 cm (5.8 inch) Super retina HD Display
+                    12MP + 12MP|7MP Front Camera A12 Bionic Chip Processor</p>
+                <div class="btn btn-primary" onclick="getItem(5)">
+                    Buy
+                </div>
+            </div>
+        </div>
+
+
+        <footer class=" footerholder ">
+            <div class=" footer">
+                Powered Binar Academy Ecommerce
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
